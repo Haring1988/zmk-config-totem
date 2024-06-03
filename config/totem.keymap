@@ -32,34 +32,59 @@
     combos {
         compatible = "zmk,combos";
 
-        lctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <11 12>;
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
             timeout-ms = <120>;
         };
 
-        lalt {
-            bindings = <&kp LALT>;
-            key-positions = <12 13>;
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <10 11>;
             timeout-ms = <120>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <10 11>;
+            key-positions = <29 30>;
             timeout-ms = <120>;
         };
 
-        ecs {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
+        caps {
+            bindings = <&kp CAPS>;
+            key-positions = <21 22>;
             timeout-ms = <120>;
         };
 
-        delete {
-            bindings = <&kp DELETE>;
+        ba {
+            bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;
             timeout-ms = <120>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <2 3>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <12 13>;
+        };
+
+        pu {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <6 7>;
+        };
+
+        pd {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <16 17>;
+        };
+
+        entter {
+            bindings = <&kp ENTER>;
+            key-positions = <18 19>;
         };
     };
 
